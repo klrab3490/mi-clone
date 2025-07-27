@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Xiaomi India | Smartphone | Tablet | TV</title>
         <link rel="stylesheet" href="./style.css">
+        <title>Xiaomi India | Smartphone | Tablet | TV</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
 
     <body class="bg-gray-100">
-
         <!-- Navigation Section -->
         <div style="position:sticky;top:0;z-index:50;">
             <header class="flex justify-between items-center bg-white shadow-md px-8 h-[56px] sticky top-0 z-50">
@@ -37,7 +34,7 @@
 
                     <div class="relative phones-trigger group h-[56px] flex items-center cursor-pointer hidden lg:flex">
                         <a href="./phone.html" class="text-black group-hover:text-[#FF6900] transition-colors duration-300">Phones</a>
-                        <div class="underline-indicator absolute bottom-0 left-0 w-full h-0.5 bg-[#FF6900] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></div>
+                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FF6900] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></div>
                     </div>
 
                     <div class="relative tablets-trigger group h-[56px] flex items-center cursor-pointer hidden lg:flex">
@@ -51,8 +48,8 @@
                     </div>
     
                     <div class="relative watch-trigger group h-[56px] flex items-center cursor-pointer hidden lg:flex">
-                        <a href="./watch-audio.html" class="text-black group-hover:text-[#FF6900] transition-colors duration-300">Smart Watch & Audio</a>
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FF6900] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></div>
+                        <a href="./watch-audio.html" class="text-[#FF6900] group-hover:text-[#FF6900] transition-colors duration-300">Smart Watch & Audio</a>
+                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#FF6900] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 scale-x-100"></div>
                     </div>
                 </div>
 
@@ -911,557 +908,403 @@
             </div>
         </div>
 
-
-        <!-- Slider Section -->
-        <section class="relative h-[480px] md:h-[360px] lg:h-[600px] overflow-hidden">
-            <div id="sliderWrapper" class="flex transition-transform duration-500 h-full">
-                <!-- Slides 1 -->
-                <div class="slider-card active relative w-[100vw] h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/702_operator_in/11/07/2025/59fdec5b3e9e2a620842e0d14764933f.jpg?thumb=1&w=5120&f=webp&q=85" alt="Product 1" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Xiaomi Insider Days</h1>
-                        <p class="text-lg mb-4">Your Access to Exclusive Rewards <br> Benefits worth ₹13,000/- </p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
+        <!-- Smart Watch Section -->
+        <h1 class="h-32 flex flex-col justify-center items-center text-3xl font-bold" id="smartwatch">Smart Watch</h1>
+        
+        <!-- Smart Watch Slider Section -->
+        <section class="relative h-[474px] overflow-hidden">
+            <div id="smartwatchSliderWrapper" class="flex transition-transform duration-500 h-full">
+                <!-- Slide 1 -->
+                <div class="smartwatch-card active relative w-[100vw] h-[474px] items-start justify-start text-left px-0">
+                    <img src="//i03.appmifile.com/249_operator_in/21/05/2025/c454ab6e3ec9c58f58d35ca789ae4d11.png?thumb=1&w=2560&q=85" alt="Redmi Watch Move" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
+                    <div class="relative z-[2] flex flex-col items-start justify-center h-[474px] w-1/2 absolute top-1/2 left-1/4 ml-20 -translate-x-1/2 -translate-y-1/2 text-white">
+                        <h1 class="text-[46px] font-semibold mb-3">Redmi Watch Move</h1>
+                        <div class="text-[22px] mb-4">
+                            <p>14 Days of Battery Life*</p>
+                            <p>Starting at ₹1,999 (1 Unit)</p>
+                        </div>
+                        <button class="bg-white hover:bg-[#e65c00] text-black px-8 py-3 rounded-full text-base mt-6">Buy Now</button>
                     </div>
                 </div>
 
-                <!-- Slides 2 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/740_operator_in/11/07/2025/36f1f735742d646048bbee9f218495f9.jpg?thumb=1&w=5120&f=webp&q=85" alt="Product 2" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Upgrade Your Sound Game</h1>
-                        <p class="text-lg mb-4">Buy Redmi Note 14 Pro+ & Get <br> Redmi Buds 6 at ₹2,499/- </p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
+                <!-- Slide 2 -->
+                <div class="smartwatch-card relative w-[100vw] h-[474px] items-start justify-start text-left px-0">
+                    <img src="//i03.appmifile.com/809_operator_in/04/11/2024/51cb30e002bc64614242170ff9b3678f.png?thumb=1&w=2560&q=85" alt="Redmi Watch 5 Active" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
+                    <div class="relative z-[2] flex flex-col items-start justify-center h-[474px] w-1/2 absolute top-1/2 left-1/4 ml-20 -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-[46px] font-semibold mb-3">Redmi Watch 5 Active</h1>
+                        <div class="text-[22px] mb-4">
+                            <p>18 Days Battery , Clear+ Calling</p>
+                            <p>Starting at just ₹2,599</p>
+                        </div>
+                        <button class="bg-black hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base mt-6">Buy Now</button>
                     </div>
                 </div>
 
-                <!-- Slides 3 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/287_operator_in/10/07/2025/76c4f03730a4c55cf26137c1e843cc1b.png?thumb=1&w=5120&f=webp&q=85" alt="Product 3" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Xiaomi Compact Power Bank 20000</h1>
-                        <p class="text-lg mb-4">Durability Champion Launch Price ₹1,799</p>
-                        <p class="text-sm">Sale is Live</p> 
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
+                <!-- Slide 3 -->
+                <div class="smartwatch-card relative w-[100vw] h-[474px] items-start justify-start text-left px-0">
+                    <img src="//i03.appmifile.com/13_operator_in/04/11/2024/a041123e6b467420d9c5e280563d50f9.png?thumb=1&w=2560&q=85" alt=" Redmi Watch 5 Lite" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
+                    <div class="relative z-[2] flex flex-col items-start justify-center h-[474px] w-1/2 absolute top-1/2 left-1/4 ml-20 -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-[46px] font-semibold mb-3"> Redmi Watch 5 Lite</h1>
+                        <div class="text-[22px] mb-4">
+                            <p>1.96" AMOLED Display with BT Calling</p>
+                            <p>Get Just At ₹3,499</p>
+                        </div>
+                        <button class="bg-black hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base mt-6">Buy Now</button>
                     </div>
                 </div>
-
-                <!-- Slides 4 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/695_operator_in/11/07/2025/9a01dcb26e5ede5803b87f7cabb0f8cf.jpg?thumb=1&w=5120&f=webp&q=85" alt="Product 4" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Smarter Phone, Smarter Time</h1>
-                        <p class="text-lg mb-4">Unlock ₹500 Off on Watch 5 <br> Only with Note 14 Pro+</p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Slides 5 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/701_operator_in/30/06/2025/48cc657836784d9cb7fc0ac660cb6035.jpg?thumb=1&w=5120&f=webp&q=85" alt="Product 5" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">REDMI Pad 2</h1>
-                        <p class="text-lg mb-4">Built for More <br> Starting at just ₹12,999*</p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Slides 6 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/469_operator_in/11/07/2025/4f463fe7ed90bc35df4fa4a8041ce9df.png?thumb=1&w=5120&f=webp&q=85" alt="Product 6" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Free Redmi Buds 5A with Redmi Note 14</h1>
-                        <p class="text-lg mb-4">Get Redmi Buds 5A Absolutely Free Redmi <br> Note 14 Series</p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Slides 7 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/203_operator_in/11/07/2025/b50335e3471a9b04cb9930425704caf5.jpg?thumb=1&w=5120&f=webp&q=85" alt="Product 7" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Xiaomi QLED TV FX Pro Series 2025</h1>
-                        <p class="text-lg mb-4">FantastiQLED <br> Starting from ₹25,999* (1 Unit)</p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Slides 8 -->
-                <div class="slider-card relative w-full h-[600px] items-start justify-start text-left px-0">
-                    <img src="https://i03.appmifile.com/150_operator_in/02/07/2025/f0f5655a0dbc998790fa26c53196b1d2.jpg?thumb=1&w=5120&f=webp&q=85" alt="Product 8" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
-                    <div class="relative z-[2] bg-white/85 p-8 rounded-xl max-w-md m-10">
-                        <h1 class="text-3xl font-semibold mb-3">Xiaomi 4K TV F43 2025</h1>
-                        <p class="text-lg mb-4">Cinematic Clarity <br> Available at ₹22,999* (1 Unit)</p>
-                        <button class="bg-[#ff6900] hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base">Learn More</button>
-                    </div>
-                </div>
-
-                <!-- Navigation -->
-                <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-[#ff6900] text-2xl px-4 py-2 rounded-full z-10">&#10094;</button>
-                <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 hover:bg-[#ff6900] text-2xl px-4 py-2 rounded-full z-10">&#10095;</button>
-
-                <!-- Dots -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer active"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                    <span class="dot w-5 md:w-16 h-1 bg-gray-300 rounded-full cursor-pointer"></span>
-                </div>
+            </div>
+            <!-- Navigation -->
+            <button id="prevBtnSmartwatch" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-[#ff6900] text-2xl px-4 py-2 rounded-full z-10">&#10094;</button>
+            <button id="nextBtnSmartwatch" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 hover:bg-[#ff6900] text-2xl px-4 py-2 rounded-full z-10">&#10095;</button>
+            <!-- Dots -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 rounded-full flex bg-gray-700 z-10">
+                <span class="smartwatchdot w-5 h-1 bg-gray-700 rounded-l-full cursor-pointer active"></span>
+                <span class="smartwatchdot w-5 h-1 bg-gray-700 cursor-pointer"></span>
+                <span class="smartwatchdot w-5 h-1 bg-gray-700 rounded-r-full cursor-pointer"></span>
             </div>
         </section>
+       
+        <!-- Earbuds Section -->
+        <h1 class="h-32 flex flex-col justify-center items-center text-3xl font-bold" id="earbuds">Earbuds</h1>
 
-        <!-- Featured -->
-        <section class="my-4 pt-14 pb-4 md:my-[120px] md:mx-[8px] md:px-[32px]" id="featured">
-            <!-- Title & Tabs --> 
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold mb-8 md:md-10 lg:mb-12">Featured Products</h2>
-                <div class="flex flex-wrap justify-center gap-4 md:gap-12 font-semibold">
-                    <h3 data-index="0" class="featured-button cursor-pointer text-lg text-gray-800 hover:text-orange-500 h-[40px] border-b-2 border-orange-500 text-orange-500">New Launch</h3>
-                    <h3 data-index="1" class="featured-button cursor-pointer text-lg text-gray-800 hover:text-orange-500 h-[40px]">Phones</h3>
-                    <h3 data-index="2" class="featured-button cursor-pointer text-lg text-gray-800 hover:text-orange-500 h-[40px]">Smart TVs</h3>
-                    <h3 data-index="3" class="featured-button cursor-pointer text-lg text-gray-800 hover:text-orange-500 h-[40px]">Tablets</h3>
-                    <h3 data-index="4" class="featured-button cursor-pointer text-lg text-gray-800 hover:text-orange-500 h-[40px]">Lifestyle</h3>
+        <!-- Earbuds Product Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">40% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Buds 6</h2>
+                    <p class="text-xl font-medium mt-2">₹2,999 <span class="line-through text-gray-400 text-base ml-2">₹4,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/837_item_in/09/12/2024/3851d49e86519a09deadd8bae719cb74.jpg?thumb=1&w=500&q=85" alt="Redmi Buds 6" class="h-[230px] object-contain" />
                 </div>
             </div>
 
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">50% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Buds 5</h2>
+                    <p class="text-xl font-medium mt-2">₹2,999 <span class="line-through text-gray-400 text-base ml-2">₹4,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/279_item_in/04/07/2024/cbd9f7eaddb57b2be09727b8674720f9.png?thumb=1&w=500&q=85" alt="Redmi Buds 5" class="h-[230px] object-contain" />
+                </div>
+            </div>
 
-            <!-- Tabs Content -->
-            <div class="relative">
-                <div class="featured-content relative w-full h-[850px] md:h-[768px] bg-white rounded-lg p-4">
+            <!-- Card 3 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">64% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Buds 5C</h2>
+                    <p class="text-xl font-medium mt-2">₹1,799 <span class="line-through text-gray-400 text-base ml-2">₹4,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/950_item_in/18/07/2024/8947fd143078b3252308e8041b63390b.png?thumb=1&w=500&q=85" alt="Redmi Buds 5C" class="h-[230px] object-contain" />
+                </div>
+            </div>
 
-                    <!-- New Launch tab content -->
-                    <div class="featured-tab active absolute top-0 left-0 w-full h-full bg-white rounded-lg p-4 grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
-                        <!-- Card 1 (Promo Image) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <img src="https://i03.appmifile.com/143_operator_in/07/07/2025/027e72fd9dec59733b985e333e328052.png?thumb=1&w=1320&f=webp&q=85" class="w-full h-32 sm:h-36 md:h-full object-cover rounded-lg" />
+            <!-- Card 4 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">56% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Buds 5A</h2>
+                    <p class="text-xl font-medium mt-2">₹1,299 <span class="line-through text-gray-400 text-base ml-2">₹2,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/294_item_in/04/07/2024/5c1f1a5e10f38388cefb0dd1194207e6.png?thumb=1&w=500&q=85" alt="Redmi Buds 5A" class="h-[230px] object-contain" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Wired Earphones Section -->
+        <h1 class="h-32 flex flex-col justify-center items-center text-3xl font-bold" id="wiredearphones">Wired Earphones</h1>
+        
+        <!-- Wired Earphones Product Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">56% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Sonic Bass Wireless Earphones 2</h2>
+                    <p class="text-xl font-medium mt-2">₹1,299 <span class="line-through text-gray-400 text-base ml-2">₹2,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-gray-300 text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8" disabled>Out of stock</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/9_item_in/01/08/2023/5b55c8858a7f2107e20d448e280e6357.jpg?thumb=1&w=500&q=85" alt="Redmi Sonic Bass Wireless Earphones 2" class="h-[230px] object-contain" />
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">50% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Mi Earphones Basic (with in-built mic)</h2>
+                    <p class="text-xl font-medium mt-2">₹499 <span class="line-through text-gray-400 text-base ml-2">₹999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/861_item_in/01/09/2023/a42193897ee870f847b2aaeeea47e85f.png?thumb=1&w=500&q=85" alt="Mi Earphones Basic (with in-built mic)" class="h-[230px] object-contain" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Speakers Section -->
+        <h1 class="h-32 flex flex-col justify-center items-center text-3xl font-bold" id="speakers">Speakers</h1>
+
+        <!-- Speakers Product Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">28% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Mi Portable Bluetooth Speaker (16W)</h2>
+                    <p class="text-xl font-medium mt-2">₹2,499 <span class="line-through text-gray-400 text-base ml-2">₹3,499</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-gray-300 text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8" disabled>Out of stock</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1613844064.93574921.jpg?thumb=1&w=500&q=85" alt="Mi Portable Bluetooth Speaker (16W)" class="h-[230px] object-contain" />
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">48% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Xiaomi Smart Speaker (IR Control)</h2>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1657699018.20982385.jpg?thumb=1&w=500&q=85" alt="Xiaomi Smart Speaker (IR Control)" class="h-[230px] object-contain" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio Section -->
+        <h1 class="h-32 flex justify-center items-center text-3xl font-bold" id="audio">Audio</h1>
+        <!-- Audio Slider -->
+        <section class="relative h-[474px] overflow-hidden">
+            <div id="smarthomeSliderWrapper" class="flex transition-transform duration-500 h-full w-[400vw]">
+                <!-- Slide 1 -->
+                <div class="smarthomeslidercard active relative w-[100vw] h-[474px] items-start justify-start text-left px-0 shrink-0">
+                    <img src="//i03.appmifile.com/417_operator_in/20/12/2024/bf6329ef205584079e2707621839ce50.png?thumb=1&w=2560&q=85" alt="Redmi Buds 6" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
+                    <div class="relative z-[2] flex flex-col items-start justify-center h-[474px] w-1/2 absolute top-1/2 left-1/4 ml-20 -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-3xl font-semibold mb-3">Redmi Buds 6</h1>
+                        <div class="text-lg mb-4">
+                            <p>Get up to 2 months* of Spotify Premium</p>
+                            <p>Only at ₹2,999</p>
                         </div>
-                       
-                        <!-- Card 2 (Promo Text) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <div class="text-center">
-                                <h3 class="text-[26px] font-bold">Xiaomi Insider Days</h3>
-                                <p class="text-[16px] mt-3">Xiaomi Insider Days Your Access to Exclusive Rewards<br />Benefits worth ₹13,000/-</p>
-                            </div>
-                            <button class="bg-black text-white px-6 py-2 rounded-lg text-base">Learn More</button>
-                        </div>
-                       
-                        <!-- Card 3 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/846_item_in/09/05/2025/067eacc6cc66bb2fd39b1a57ef74c862.png?thumb=1&amp;w=160&amp;q=85" alt="Xiaomi Smart TV FX Pro QLED Series 55 (138 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV FX Pro QLED Series 55 (138cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹38,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹69,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/603_item_in/13/05/2025/7ce50ce706d21ca85aff25faf6a7a8c2.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi 4K LED TV FX Series 55 (138 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi 4K LED TV FX Series 55 (138 cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹34,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹54,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/4_item_in/07/05/2025/a9603e7913689129777761e152535f9a.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Smart TV A Pro QLED Series 32 (80 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV A Pro QLED Series 32 (80cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹14,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹26,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/986_item_in/07/05/2025/d78a66fa0d7939e8880ca05bc4a22516.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Smart TV A Series 43 (108 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV A Series 43 (108 cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹21,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹34,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Phones tab content -->
-                    <div class="featured-tab absolute top-0 left-0 w-full h-full bg-white rounded-lg p-4 grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
-                        <!-- Card 1 (Promo Image) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <img src="https://i03.appmifile.com/615_operator_in/18/12/2024/d7d6da3e85354cfa22fa33b7f39e7f60.png?thumb=1&w=1320&f=webp&q=85" class="w-full h-32 sm:h-36 md:h-full object-cover rounded-lg" />
-                        </div>
-
-                        <!-- Card 2 (Promo Text) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <div class="text-center">
-                                <h3 class="text-[26px] font-bold">Redmi Note 14 Series</h3>
-                                <p class="text-[16px] mt-3">Lowest Price Ever <br> Starting at ₹16,999*</p>
-                            </div>
-                            <button class="bg-black text-white px-6 py-2 rounded-lg text-base">Learn More</button>
-                        </div>
-
-                        <!-- Card 3 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/286_item_in/17/03/2025/3f5872ded299b098ae2e2d811703969b.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi 15" class="h-1/2 object-cover rounded-lg" /> 
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi 15</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹64,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹79,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/171_item_in/17/03/2025/86e4467fa4a9d1de24957d55a1341e4e.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi 15 Ultra" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi 15 Ultra</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹1,09,999</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/384_item_in/21/01/2025/57e74ae437499b7bcc66a9a62b07eaf3.png?thumb=1&w=320&f=webp&q=85" alt="Redmi Note 14 Pro+ 5G" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Note 14 Pro+ 5G</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹27,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹34,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/385_item_in/21/01/2025/534f2e609ee27aebd1b04114efe98552.png?thumb=1&w=320&f=webp&q=85" alt="Redmi Note 14 Pro 5G" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Note 14 Pro 5G</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹22,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹28,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Smart TVs tab content -->
-                    <div class="featured-tab absolute top-0 left-0 w-full h-full bg-white rounded-lg p-4 grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
-                        <!-- Card 1 (Promo Image) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <img src="https://i03.appmifile.com/922_operator_in/13/05/2025/b4878e50a560437925de333f303205b9.jpg?thumb=1&w=1320&f=webp&q=85" class="w-full h-32 sm:h-36 md:h-full object-cover rounded-lg" />
-                        </div>
-
-                        <!-- Card 2 (Promo Text) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <div class="text-center">
-                                <h3 class="text-[26px] font-bold">Xiaomi & Redmi TVs</h3>
-                                <p class="text-[16px] mt-3">Beyond Watching. Start Experiencing</p>
-                            </div>
-                            <button class="bg-black text-white px-6 py-2 rounded-lg text-base">Learn More</button>
-                        </div>
-
-                        <!-- Card 3 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/846_item_in/09/05/2025/067eacc6cc66bb2fd39b1a57ef74c862.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Smart TV FX Pro QLED Series 55 (138 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV FX Pro QLED Series 55 (138 cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹38,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹69,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/986_item_in/07/05/2025/d78a66fa0d7939e8880ca05bc4a22516.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Smart TV A Series 43 (108 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV A Series 43 (108 cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹21,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹34,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/751_item_in/24/07/2023/8bc1ed3d807e0ca02dc8822b7130fc59.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Smart TV A 32 (80cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV A 32 (80cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹14,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹24,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/486_item_in/19/11/2024/7a76280cf580d433b65d698c5c553b98.png?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Smart TV X 55 (138.8 cm)" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Smart TV X 55 (138.8 cm)</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹39,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹54,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Tablets Tab Content -->
-                    <div class="featured-tab absolute top-0 left-0 w-full h-full bg-white rounded-lg p-4 grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
-                        <!-- Card 1 (Promo Image) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <img src="https://i03.appmifile.com/756_operator_in/04/11/2024/4a8069ac6461ee72f96ede4a6523c8e3.png?thumb=1&w=1320&f=webp&q=85" class="w-full h-32 sm:h-36 md:h-full object-cover rounded-lg" />
-                        </div>
-
-                        <!-- Card 2 (Promo Text) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <div class="text-center">
-                                <h3 class="text-[26px] font-bold">Xiaomi Pad 6</h3>
-                                <p class="text-[16px] mt-3">11-inch Billion Colour Display</p>
-                            </div>
-                            <button class="bg-black text-white px-6 py-2 rounded-lg text-base">Learn More</button>
-                        </div>
-
-                        <!-- Card 3 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/368_item_in/16/06/2025/b6be54b63427a97d2cf44501a42da919.jpg?thumb=1&w=320&f=webp&q=85" alt="Redmi Pad 2" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Pad 2</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹13,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹16,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/89_item_in/16/06/2025/042de491a30693da901ec147af8e4eb6.jpg?thumb=1&w=320&f=webp&q=85" alt="Redmi Pad 2 Wifi + Cellular" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Pad 2 Wifi + Cellular</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">From ₹15,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹19,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/541_item_in/30/04/2025/3df65efc8faa64f2c9d01d5a142d758d.jpg?thumb=1&w=320&f=webp&q=85" alt="Xiaomi Pad 7" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Xiaomi Pad 7</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">From ₹25,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹34,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/930_item_in/20/09/2024/7787e9194143cf61dc80a37c95b4c3f5.png?thumb=1&w=320&f=webp&q=85" alt="Redmi Pad Pro 5G" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Pad Pro 5G</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">From ₹24,999</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹27,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Lifestyle Tab Content -->
-                    <div class="featured-tab absolute top-0 left-0 w-full h-full bg-white rounded-lg p-4 grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-6">
-                        <!-- Card 1 (Promo Image) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <img src="https://i03.appmifile.com/327_operator_in/04/11/2024/2692379c2b034cd4625ac3a57a536ceb.png?thumb=1&w=1320&f=webp&q=85" class="w-full h-32 sm:h-36 md:h-full object-cover rounded-lg" />
-                        </div>
-
-                        <!-- Card 2 (Promo Text) -->
-                        <div class="col-span-2 flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50">
-                            <div class="text-center">
-                                <h3 class="text-[26px] font-bold">Lifestyle Products</h3>
-                                <p class="text-[16px] mt-3"> Style. Comfort. You - Redefined.</p>
-                            </div>
-                            <button class="bg-black text-white px-6 py-2 rounded-lg text-base">Learn More</button>
-                        </div>
-
-                        <!-- Card 3 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/895_item_in/21/04/2025/72071465a227d11616a2cf83877407b2.png?thumb=1&w=320&f=webp&q=85" alt="Redmi Watch Move" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Watch Move</h3>
-                                <p class="mt-1 sm:mt-3 flex items-center justify-center gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹1,799</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹3,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/384_item_in/09/12/2024/93e81c14b53f82e5392faa655c672dfa.jpg?thumb=1&w=320&f=webp&q=85" alt="Redmi Buds 6" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Buds 6</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹2,799</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹4,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 5 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/770_item_in/27/08/2024/9714512ab752a71cda4769199d886517.png?thumb=1&w=320&f=webp&q=85" alt="Redmi Watch 5 Active" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Watch 5 Active</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹2,599</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹4,999</del></span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Card 6 (Promo Text) -->
-                        <div class="flex flex-col items-center justify-center gap-1 md:gap-6 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4 h-40 sm:h-52 md:h-64 lg:h-72 xl:h-80">
-                            <img src="https://i03.appmifile.com/600_item_in/04/07/2024/ff20a6058f205e2f8452ac3aa564242d.png?thumb=1&w=320&f=webp&q=85" alt="Redmi Buds 5A" class="h-1/2 object-cover rounded-lg" />
-                            <div class="text-center">
-                                <h3 class="text-[20px] md:text-[22px] text-black font-semibold">Redmi Buds 5A</h3>
-                                <p class="mt-1 md:mt-3 flex items-center justify-center gap-1 md:gap-2">
-                                    <span class="text-[16px] sm:text-[16px] sm:text-[18px] font-bold">₹1,099</span>
-                                    <span class="text-[13px] sm:text-[15px] text-gray-800"><del>₹2,999</del></span>
-                                </p>
-                            </div>
-                        </div>
+                        <button class="bg-black hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base mt-5">Buy Now</button>
                     </div>
                 </div>
+
+                <!-- Slide 2 -->
+                <div class="smarthomeslidercard relative w-[100vw] h-[474px] items-start justify-start text-left px-0 shrink-0">
+                    <img src="//i03.appmifile.com/905_operator_in/20/12/2024/72f64734342cc86a401de2ca7b0f8941.jpg?thumb=1&w=2560&q=85" alt="Xiaomi Sound Outdoor Speaker" class="absolute top-0 left-0 w-full h-full object-cover z-[1]" />
+                    <div class="relative z-[2] flex flex-col items-start justify-center h-[474px] w-1/2 absolute top-1/2 left-1/4 ml-20 -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-3xl font-semibold mb-3">Xiaomi Sound Outdoor Speaker</h1>
+                        <div class="text-lg mb-4">
+                            <p>Big Speaker Energy</p>
+                            <p>Only at ₹3,999</p>
+                        </div>
+                        <button class="bg-black hover:bg-[#e65c00] text-white px-8 py-3 rounded-full text-base mt-5">Buy Now</button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Navigation -->
+            <button id="prevBtnSmarthomeSlider" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/80 hover:bg-[#ff6900] text-2xl px-4 py-2 rounded-full z-10">&#10094;</button>
+            <button id="nextBtnSmarthomeSlider" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/80 hover:bg-[#ff6900] text-2xl px-4 py-2 rounded-full z-10">&#10095;</button>
+            <!-- Dots -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex bg-gray-700 z-10 rounded-full">
+                <span class="smarthomesliderdot w-5 h-1 bg-gray-700 rounded-l-full cursor-pointer active"></span>
+                <span class="smarthomesliderdot w-5 h-1 bg-gray-700 rounded-r-full cursor-pointer"></span>
             </div>
         </section>
-
-        <!-- Exclusive Offers -->
-        <section class="my-4 pt-14 pb-4 md:my-[120px] md:mx-[8px] md:px-[32px]">
-            <div class="flex justify-between items-center mb-8 md:md-10 lg:mb-12">
-                <div></div>
-                <h2 class="text-[32px] font-bold text-center">Exclusive Offers</h2>
-                <div class="flex gap-4">
-                    <button id="prevBtnCard">
-                        <i class="fa-regular fa-square-caret-left text-3xl text-gray-400"></i>
-                    </button>
-                    <button id="nextBtnCard">
-                        <i class="fa-regular fa-square-caret-right text-3xl text-gray-400"></i>
-                    </button>
+        <!-- Audio Products -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">48% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Watch 5 Active</h2>
+                    <p class="text-xl font-medium mt-2">₹2,599 <span class="line-through text-gray-400 text-base ml-2">₹4,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/672_item_in/27/08/2024/95145e9498f9e7009dcd6b8e1a78e3fb.png?thumb=1&w=500&q=85" alt="Redmi Watch 5 Active" class="h-[230px] object-contain" />
                 </div>
             </div>
-            <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-3 justify-center gap-6">
-                <div class="card group1 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center">
-                    <img src="https://i03.appmifile.com/310_operator_in/09/07/2025/0bf9696e39d9363fdba9d310fddf6501.jpg?thumb=1&w=840&f=webp&q=85" class="w-full h-32 md:w-full md:h-40 lg:h-52 object-cover rounded-lg">
-                    <div class="text-center mt-8 mr-0 mb-10 ml-4">
-                        <h2 class="text-[22px] font-bold">Smart Bundles</h2>
-                        <p class="text-[16px]">Buy More ! Save Up to 45% Off</p>
-                    </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">50% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Redmi Watch 5 Lite</h2>
+                    <p class="text-xl font-medium mt-2">₹3,499 <span class="line-through text-gray-400 text-base ml-2">₹6,999</span></p>
                 </div>
-                <div class="card group1 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center">
-                    <img src="https://i03.appmifile.com/644_operator_in/09/07/2025/549df2d2bec29a690551e62f36f226bc.jpg?thumb=1&w=840&f=webp&q=85" class="w-full h-32 md:w-full md:h-40 lg:h-52 object-cover rounded-lg">
-                    <div class="text-center mt-8 mr-0 mb-10 ml-4">
-                        <h2 class="text-[22px] font-bold">Free Spotify Premium</h2>
-                        <p class="text-[16px]">Enjoy up to 4 Months of Ad-free Music</p>
-                    </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
                 </div>
-                <div class="card group1 p-4 bg-white rounded-lg shadow-lg flex flex-col items-center">
-                    <img src="https://i03.appmifile.com/437_operator_in/09/07/2025/ac78d4770fa4329d64859b75da98e309.jpg?thumb=1&w=840&f=webp&q=85" class="w-full h-32 md:w-full md:h-40 lg:h-52 object-cover rounded-lg">
-                    <div class="text-center mt-8 mr-0 mb-10 ml-4">
-                        <h2 class="text-[22px] font-bold">New User Zone</h2>
-                        <p class="text-[16px]">Get the Xiaomi Store App</p>
-                    </div>
-                </div>
-                <div class="card group2 hidden p-4 bg-white rounded-lg shadow-lg flex flex-col items-center">
-                    <img src="https://i03.appmifile.com/681_operator_in/09/07/2025/2420f696128b184d19c033594c678fee.jpg?thumb=1&w=840&f=webp&q=85" class="w-full h-32 md:w-full md:h-40 lg:h-52 object-cover rounded-lg">
-                    <div class="text-center mt-8 mr-0 mb-10 ml-4">
-                        <h2 class="text-[22px] font-bold">Xiaomi Exchange</h2>
-                        <p class="text-[16px]">Smartest way to upgrade</p>
-                    </div>
-                </div>
-                <div class="card group2 hidden p-4 bg-white rounded-lg shadow-lg flex flex-col items-center">
-                    <img src="https://i03.appmifile.com/69_operator_in/04/11/2024/6472a783e9d88fd70ced3d6cef0738da.png?thumb=1&w=840&f=webp&q=85" class="w-full h-32 md:w-full md:h-40 lg:h-52 object-cover rounded-lg">
-                    <div class="text-center mt-8 mr-0 mb-10 ml-4">
-                        <h2 class="text-[22px] font-bold">Power Banks</h2>
-                        <p class="text-[16px]">Power up, Pay less</p>
-                    </div>
-                </div>
-                <div class="card group2 hidden p-4 bg-white rounded-lg shadow-lg flex flex-col items-center">
-                    <img src="https://i03.appmifile.com/375_operator_in/04/11/2024/7c86d4326267e04ab3209ed000775d57.png?thumb=1&w=840&f=webp&q=85" class="w-full h-32 md:w-full md:h-40 lg:h-52 object-cover rounded-lg">
-                    <div class="text-center mt-8 mr-0 mb-10 ml-4">
-                        <h2 class="text-[22px] font-bold">Audio Products</h2>
-                        <p class="text-[16px]">For the love of Music</p>
-                    </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/706_item_in/24/09/2024/9b1c0a7d6be9eaf7bea0e49784da2d11.png?thumb=1&w=500&q=85" alt="Redmi Watch 5 Lite" class="h-[230px] object-contain" />
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Explore Xiaomi -->
-
-        <!-- Xiaomi Support -->
-        <section class="my-4 pt-14 pb-4 md:my-[120px] md:mx-[8px] md:px-[32px] text-center">
-            <h2 class="text-3xl font-bold mb-8 md:md-10 lg:mb-12">Xiaomi Support</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-
-                <!-- Xiaomi Exchange -->
-                <div>
-                    <img src="https://i.ibb.co/6X9h6pb/exchange-icon.png" alt="Xiaomi Exchange Icon" class="mx-auto w-12 mb-4" />
-                    <h3 class="text-xl font-semibold">Xiaomi Exchange</h3>
-                    <p class="mt-2 text-gray-600">Save More & Go Green With<br />Your Old Device</p>
+        <!-- Grooming -->
+        <h1 class="h-32 flex justify-center items-center text-3xl font-bold" id="grooming">Grooming</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class=" col-span-1 md:col-span-2 bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">50% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Xiaomi Uniblade Trimmer</h2>
+                    <p class="text-xl font-medium mt-2">₹1,499 <span class="line-through text-gray-400 text-base ml-2">₹2,999</span></p>
                 </div>
-
-                <!-- Mi Complete Protection -->
-                <div>
-                    <img src="https://i.ibb.co/tJpqfT2/protection-icon.png" alt="Mi Protection Icon" class="mx-auto w-12 mb-4" />
-                    <h3 class="text-xl font-semibold">Mi Complete Prot...</h3>
-                    <p class="mt-2 text-gray-600">Protect Your Device In Less<br />Than ₹2/Day</p>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-gray-300 text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8" disabled>Out of stock</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
                 </div>
-
-                <!-- Service Centers -->
-                <div>
-                    <img src="https://i.ibb.co/jbDt8qM/service-icon.png" alt="Service Center Icon" class="mx-auto w-12 mb-4" />
-                    <h3 class="text-xl font-semibold">Service Centers</h3>
-                    <p class="mt-2 text-gray-600">Right Where You Need Us</p>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i03.appmifile.com/259_item_in/01/09/2023/705b609efc5e3024adfd13739d9495ef.jpg?thumb=1&w=500&q=85" alt="Xiaomi Uniblade Trimmer" class="h-[230px] object-contain" />
                 </div>
-
-                <!-- Mi Extended Warranty -->
-                <div>
-                    <img src="https://i.ibb.co/s2NcTFr/warranty-icon.png" alt="Warranty Icon" class="mx-auto w-12 mb-4" />
-                    <h3 class="text-xl font-semibold">Mi Extended Warr...</h3>
-                    <p class="mt-2 text-gray-600">Ensure Your Devices For An<br />Extra Year At Nominal Cost</p>
-                </div>
-
             </div>
-        </section>
 
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">40% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Xiaomi Beard Trimmer 2C</h2>
+                    <p class="text-xl font-medium mt-2">₹1,199 <span class="line-through text-gray-400 text-base ml-2">₹1,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8">Buy now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1681292640.42658518.jpg?thumb=1&w=500&q=85" alt="Xiaomi Beard Trimmer 2C" class="h-[230px] object-contain" />
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">42% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Xiaomi Beard Trimmer 2</h2>
+                    <p class="text-xl font-medium mt-2">₹1,999 <span class="line-through text-gray-400 text-base ml-2">₹3,499</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-gray-300 text-white font-medium px-4 rounded-full hover:bg-gray-800 h-8" disabled>Out of stock</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1634012784.2521608.jpg?thumb=1&w=500&q=85" alt="Xiaomi Beard Trimmer 2" class="h-[230px] object-contain" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Backpack -->
+        <h1 class="h-32 flex justify-center items-center text-3xl font-bold" id="backpack">Backpack</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">20% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Mi Step Out Backpack</h2>
+                    <p class="text-xl font-medium mt-2">₹399 <span class="line-through text-gray-400 text-base ml-2">₹499</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full h-8 cursor-not-allowed">Buy Now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1576490467.46922243.png?thumb=1&w=500&q=85" alt="Mi Step Out Backpack" class="h-[230px] object-contain" />
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <span class="bg-orange-100 text-orange-600 text-sm px-2 py-1 rounded w-fit">45% off</span>
+                <div class="h-[135px] flex flex-col justify-end">
+                    <h2 class="text-2xl font-semibold mt-4">Mi Business Casual Backpack</h2>
+                    <p class="text-xl font-medium mt-2">₹1,099 <span class="line-through text-gray-400 text-base ml-2">₹1,999</span></p>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full h-8 cursor-not-allowed">Buy Now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1563519255.53482921.jpg?thumb=1&w=500&q=85" alt="Mi Business Casual Backpack" class="h-[230px] object-contain" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Shoe -->
+        <h1 class="h-32 flex justify-center items-center text-3xl font-bold" id="shoes">Shoe</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <div class="h-[135px] flex flex-col justify-center">
+                    <h2 class="text-2xl font-semibold mt-4">Xiaomi Running Shoes</h2>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full h-8 cursor-not-allowed">Buy Now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1650346984.74057834.jpg?thumb=1&w=500&q=85" alt="Xiaomi Running Shoes" class="h-[230px] object-contain" />
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 flex flex-col justify-between text-center shadow-md h-[530px]">
+                <div class="h-[135px] flex flex-col justify-center">
+                    <h2 class="text-2xl font-semibold mt-4">Mi Athleisure Shoes</h2>
+                </div>
+                <div class="mt-4 flex gap-3 items-center justify-center">
+                    <button class="bg-black text-white font-medium px-4 rounded-full h-8 cursor-not-allowed">Buy Now</button>
+                    <button class="border border-gray-800 px-4 rounded-full hover:bg-gray-100 h-8">Learn More</button>
+                </div>
+                <div class="flex justify-center items-center mt-2">
+                    <img src="//i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601360819.1764714.png?thumb=1&w=500&q=85" alt="Mi Athleisure Shoes" class="h-[230px] object-contain" />
+                </div>
+            </div>
+        </div>
+      
         <!-- Footer -->
         <footer class="bg-neutral-900 text-white px-8 flex flex-col font-[16px]">
             <div class="pt-16 px-0 flex flex-col lg:flex-row justify-between">
@@ -1580,9 +1423,7 @@
 
         <!-- Scripts -->
         <script src="./js/navbar.js"></script>
-        <script src="./js/hero-slider.js"></script>
-        <script src="./js/featured-section.js"></script>
-        <script src="./js/exclusive.js"></script>
+        <script src="./js/smartwatch.js"></script>
+        <script src="./js/smarthomeslider.js"></script>
     </body>
-
 </html>
